@@ -1,0 +1,156 @@
+.steam_wrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 347px
+}
+
+.steam_background {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: -100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 99;
+}
+
+.steam1, .steam9 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke.png);
+  left: calc(50% - 150px);
+  transform: rotate(0deg);
+  animation: steam_anim1 linear 11s infinite;
+}
+
+.steam2 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke1.png);
+  left: calc(50% - 120px);
+  transform: rotate(-100deg);
+  animation: steam_anim1 linear 11s infinite;
+}
+
+.steam3 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke2.png);
+  left: calc(50% - 130px);
+  transform: rotate(-120deg);
+  animation: steam_anim1 linear 11s infinite;
+}
+
+.steam4 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke3.png);
+  left: calc(50% - 150px);
+  transform: rotate(50deg);
+  animation: steam_anim3 linear 11s infinite;
+}
+
+.steam5, .steam11 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke4.png);
+  left: calc(50% - 120px);
+  transform: rotate(50deg);
+  animation: steam_anim3 linear 11s infinite;
+}
+
+.steam6 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke5.png);
+  left: calc(50% - 150px);
+  transform: rotate(0deg);
+  animation: steam_anim4 linear 11s infinite;
+}
+
+.steam7 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke.png);
+  left: calc(50% - 200px);
+  transform: rotate(0deg);
+  animation: steam_anim5 linear 11s infinite;
+}
+
+.steam8, .steam10 {
+  background-image: url(/catalog/view/theme/unishop2/image/smoke_inv.png);
+  left: calc(50% - 120px);
+  transform: rotate(90deg);
+  animation: steam_anim3 linear 11s infinite;
+}
+
+@keyframes steam_anim1 {
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 100%;
+    transform: rotate(180deg);
+    left: 40%;
+    opacity: 0;
+  }
+}
+
+@keyframes steam_anim2 {
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 100%;
+    transform: rotate(-100deg);
+    left: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes steam_anim3 {
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 100%;
+    transform: rotate(-100deg);
+    left: 45%;
+    opacity: 0;
+  }
+}
+
+@keyframes steam_anim4 {
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 100%;
+    transform: rotate(220deg);
+    left: calc(50% - 150px);
+    opacity: 0;
+  }
+}
+
+@keyframes steam_anim5 {
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 100%;
+    transform: rotate(260deg);
+    left: calc(52%);
+    opacity: 0;
+  }
+}
+
+@media print, screen and (min-width:1101px) and (max-width:1200px) {
+  .steam_wrapper {
+    height: 325px
+  }
+}
+
+@media print, screen and (min-width:1024px) and (max-width:1101px) {
+  .steam_wrapper {
+    height: 303px
+  }
+}
+
+@media print, screen and (min-width:901px) and (max-width:1023px) {
+  .steam_wrapper {
+    display: none;
+  }
+}
